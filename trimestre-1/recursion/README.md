@@ -34,11 +34,11 @@ Problems that can be divided into smaller subproblems of the same type, such as 
 
 When you're implementing the exercises, feel free to use the exercises here:
 
-- [Factorial](./factorial)
+- [Factorial](./0-factorial.c)
   Most basic example of recursion, calculating the factorial of a number. Used to explain the concept of base case and recursive case.
 
-- [Reverse String](./reverse-string)
+- [Reverse String](./1-reverse-string.c)
   A simple example of recursion, reversing a string. The objective is to reverse a string using recursion.
 
-- [Fibonacci](./fibonacci)
+- [Fibonacci](./2-fibonacci.c)
   A classic example of recursion, calculating the Fibonacci sequence, the objective is to calculate the nth Fibonacci number. Which is the sum of the two previous numbers.
