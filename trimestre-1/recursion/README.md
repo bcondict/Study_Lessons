@@ -26,5 +26,19 @@ Problems that can be divided into smaller subproblems of the same type, such as 
 
 ### Implementation Strategy:
 
-Identify the base case: The simplest, smallest scenario which can be solved directly.
-Define the recursive case: How to reduce the problem in each step towards eventually reaching the base case.
+- Identify the base case: The simplest, smallest scenario which can be solved directly.
+
+- Define the recursive case: How to reduce the problem in each step towards eventually reaching the base case.
+
+# Exercises Cases
+
+When you're implementing the exercises, feel free to use the exercises here:
+
+- [Factorial](./factorial)
+  Most basic example of recursion, calculating the factorial of a number. Used to explain the concept of base case and recursive case.
+
+- [Reverse String](./reverse-string)
+  A simple example of recursion, reversing a string. The objective is to reverse a string using recursion.
+
+- [Fibonacci](./fibonacci)
+  A classic example of recursion, calculating the Fibonacci sequence, the objective is to calculate the nth Fibonacci number. Which is the sum of the two previous numbers.
