@@ -4,8 +4,8 @@
 
 ## Objective: Cover about background and origin of malloc, how to use it and the some exercises to practice.
 
-<div>
-  <img src='./images/Malloc_diagram_computer.webp' alt="malloc_image" width="30rem"/>
+<div width="30rem">
+  <img src='./images/Malloc_diagram_computer.webp' alt="malloc_image"/>
 </div>
 
 ### What is malloc?
