@@ -11,15 +11,19 @@ int main(void)
 
   printPerson(alice);
 
+  alice.name = "Carlos";
+  printPerson(alice);
+
   return (0);
 }
 
 /**
  * printPerson - Prints a Person struct
+ *
  * @person: Person to print
  */
-void printPerson(Person p)
+void printPerson(Person person)
 {
-  printf("Name: %s\n", p.name);
-  printf("Age: %d\n", p.age);
+  printf("Name: %s\n", person.name);
+  printf("Age: %d\n", person.age);
 }
