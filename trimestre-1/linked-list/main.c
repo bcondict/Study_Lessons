@@ -7,10 +7,14 @@
 */
 int main (void)
 {
-  Node_t *node2 = createNode(8, NULL);
-  Node_t *node1 = createNode(1, node2);
-  Node_t *head = createNode(5, node1);
+  Node_t *head = createNode(5, NULL);
+  Node_t *nodeApart = createNode(8, NULL);
 
+  appendNode(6, head);
+  appendNode(7, head);
+
+  printList(head);
+  insertNodeAtIndex(head, nodeApart, 3);
   printList(head);
 
   return (0);
