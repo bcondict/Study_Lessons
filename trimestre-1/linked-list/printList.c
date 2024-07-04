@@ -5,9 +5,9 @@
  *
  * @head: head of the linked list
 */
-void printList(Node *head)
+void printList(Node_t *head)
 {
-  Node *temp = head;
+  Node_t *temp = head;
 
   while (temp != NULL)
   {

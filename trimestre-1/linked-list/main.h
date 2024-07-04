@@ -6,9 +6,14 @@
 #include <stdlib.h>
 
 /* structures */
+typedef struct Node {
+  int data;
+  struct Node *next;
 
+} Node_t;
 
 /* prototypes */
-void printList(struct Node *n);
+void printList(Node_t *n);
+Node_t *createNode(int data, Node_t *next);
 
 #endif /* _MAIN_H_ */
