@@ -101,16 +101,26 @@ Over time, the shell has evolved to support a wide range of variable types and e
 - What is it?
   - Filters are commands that process data streams, often used with pipes to chain multiple commands together for complex data manipulation.
 - How to use it?
+
   - Basic Filters:
     `cat`: Concatenate and display file contents.
-    `head` and tail: Display the first or last lines of a file.
+
+    `head` and `tail`: Display the first or last lines of a file.
+
     `grep`: Search for patterns in text.
+
     `sort`: Sort lines of text.
+
     `uniq`: Remove duplicate lines.
+
     `wc`: Count lines, words, and characters.
+
     `cut`: Extract specific fields from text.
+
     `awk`: Pattern scanning and processing language.
+
     `sed`: Stream editor for filtering and transforming text.
+
   - Examples:
     ```bash
     cat file.txt | grep "search term" | sort | uniq > results.txt
