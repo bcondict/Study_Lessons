@@ -105,7 +105,7 @@ Variables are used to store data in memory. C provides various data types for di
 - Character (`char`):
   Used to store single characters.
   ```c
-  char initial = "A";
+  char initial = 'A';
   ```
 - Floating Point (`float` and `double`):
   Used to store decimal numbers.
