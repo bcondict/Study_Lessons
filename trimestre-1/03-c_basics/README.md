@@ -66,6 +66,7 @@ The compilation process is C is the series of steps that convert human-readable 
   The output is an assembly code file, often named with a `.s` extension.
 
 3. Assembly
+
   The assembly stage converts assembly code into machine code, which is a binary representation of the instructions that the CPU can execute.
 
   - Task:
@@ -75,6 +76,7 @@ The compilation process is C is the series of steps that convert human-readable 
   The output is an object file containing machine code, often named with a `.o` extension.
 
 4. Linking
+
   The linking stage combines object files and libraries to create an executable program. It resolves external symbols and addresses used in the program.
 
 
