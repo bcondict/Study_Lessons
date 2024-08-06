@@ -44,45 +44,45 @@ The compilation process is C is the series of steps that convert human-readable 
 
 1. Preprocessing
 
-  The preprocessing stage Handles directives for the preprocessor, which begins with `#`. It processes directives such as `#include`, `#define`, and conditional compilation directives.
+The preprocessing stage Handles directives for the preprocessor, which begins with `#`. It processes directives such as `#include`, `#define`, and conditional compilation directives.
 
-  - Tasks:
+- Tasks:
 
-    - Include header files: `#include <stdio.h>`
-    - Define macros: `#define PI 3.14159`
-    - Conditional compilation: `#ifdef DEBUG`
+  - Include header files: `#include <stdio.h>`
+  - Define macros: `#define PI 3.14159`
+  - Conditional compilation: `#ifdef DEBUG`
 
-  - Output:
-    The output is a modified version of the source code with all the preprocessor directives resolved. The file is often named with a `.i` extension
+- Output:
+  The output is a modified version of the source code with all the preprocessor directives resolved. The file is often named with a `.i` extension
 
 2. Compilation
 
-  The compilation stage translates the preprocessed source code into assembly code. The compiler checks for syntax errors and translates high-level language constructs into low-level instructions.
+The compilation stage translates the preprocessed source code into assembly code. The compiler checks for syntax errors and translates high-level language constructs into low-level instructions.
 
-  - Task:
+- Task:
   Convert C code into assembly language.
 
-  - Output:
+- Output:
   The output is an assembly code file, often named with a `.s` extension.
 
 3. Assembly
 
-  The assembly stage converts assembly code into machine code, which is a binary representation of the instructions that the CPU can execute.
+The assembly stage converts assembly code into machine code, which is a binary representation of the instructions that the CPU can execute.
 
-  - Task:
+- Task:
   Translate assembly language into machine code.
 
-  - Output:
+- Output:
   The output is an object file containing machine code, often named with a `.o` extension.
 
 4. Linking
 
-  The linking stage combines object files and libraries to create an executable program. It resolves external symbols and addresses used in the program.
-
+The linking stage combines object files and libraries to create an executable program. It resolves external symbols and addresses used in the program.
 
 ## What is it, and How to use it?
 
-###  Basic structure of a C Program
+### Basic structure of a C Program
+
 A simple C program consists of functions, variables, and statements. The `main` function is the entry point of any C program.
 
 ```c
@@ -96,7 +96,9 @@ int main(void)
 ```
 
 ### Variables and Data Types
+
 Variables are used to store data in memory. C provides various data types for different kinds of data.
+
 - Integer (`int`):
   Used to store whole numbers.
   ```c
@@ -120,19 +122,23 @@ Variables are used to store data in memory. C provides various data types for di
   ```
 
 ### Operators
+
 C provides various operators for performing operations on variables.
 
 - Arithmetic Operators: `+`, `-`, `*`, `/`, `%`
+
   ```c
   int sum = a + b;
   ```
 
 - Relational Operators: `==`, `!=`, `<`, `>`, `<=`, `>=`
+
   ```c
   if (a == b) { /* ... */ }
   ```
 
-- Logical Operators: &&, ||, !
+- Logical Operators: `&&`, `||`, `!`
+
   ```c
   if (a > b && b < c) { /* ... */ }
   ```
@@ -142,6 +148,7 @@ C provides various operators for performing operations on variables.
   ```c
   a += 5;
   ```
+
 - Bitwise Operators: `&`, `|`, `^`, `~`, `<<`, `>>`
 
   ```c
@@ -149,9 +156,11 @@ C provides various operators for performing operations on variables.
   ```
 
 ### Control Structures
+
 - Conditional Statements:
 
   - `if` Statement:
+
     ```c
     if (condition) {
         // Code to execute if condition is true
@@ -159,6 +168,7 @@ C provides various operators for performing operations on variables.
     ```
 
   - `if-else` Statement:
+
     ```c
     if (condition) {
         // Code to execute if condition is true
@@ -181,6 +191,7 @@ C provides various operators for performing operations on variables.
             break;
     }
     ```
+
 - Loops:
 
   - `for` Loop:
@@ -190,6 +201,7 @@ C provides various operators for performing operations on variables.
     }
     ```
   - `while` Loop:
+
   ```c
   int i = 0;
   while (i < 10) {
@@ -208,9 +220,11 @@ C provides various operators for performing operations on variables.
   ```
 
 ### Functions
+
 Functions are blocks of code that perform a specific task. They promote code reuse and modularity.
 
 - Function Declaration and Definition:
+
   ```c
   int add(int a, int b);  // Function declaration
 
@@ -220,6 +234,7 @@ Functions are blocks of code that perform a specific task. They promote code reu
   ```
 
 - Function Parameters and Return Values:
+
   ```c
   int multiply(int x, int y) {
     return x * y;
@@ -231,7 +246,9 @@ Functions are blocks of code that perform a specific task. They promote code reu
   - Global Variables: Declared outside any function and accessible throughout the program.
 
 ### Input and Output
+
 - `printf` Function: Used for output.
+
   ```c
   printf("The value is %d\n", value);
   ```
@@ -244,4 +261,5 @@ Functions are blocks of code that perform a specific task. They promote code reu
   ```
 
 # Author
+
 - [Jesus Junco](https://www.linkedin.com/in/dev-jesus-junco/)
