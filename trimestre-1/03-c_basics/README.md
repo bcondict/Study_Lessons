@@ -111,7 +111,7 @@ Variables are used to store data in memory. C provides various data types for di
   Used to store decimal numbers.
   ```c
   float pi = 3.14f;
-  double e = 2.7182818284
+  double e = 2.7182818284;
   ```
 - Constants:
   Immutable Variables
