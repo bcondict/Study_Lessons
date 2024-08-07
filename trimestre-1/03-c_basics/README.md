@@ -86,7 +86,7 @@ The linking stage combines object files and libraries to create an executable pr
 A simple C program consists of functions, variables, and statements. The `main` function is the entry point of any C program.
 
 ```c
-# include <stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
@@ -202,22 +202,22 @@ C provides various operators for performing operations on variables.
     ```
   - `while` Loop:
 
-  ```c
-  int i = 0;
-  while (i < 10) {
-    printf("%d\n", i);
-    i++;
-  }
-  ```
+    ```c
+    int i = 0;
+    while (i < 10) {
+      printf("%d\n", i);
+      i++;
+    }
+    ```
 
 - `do-while` Loop:
-  ```c
-  int i = 0;
-  do {
-    printf("%d\n", i);
-    i++;
-  } while (i < 10);
-  ```
+    ```c
+    int i = 0;
+    do {
+      printf("%d\n", i);
+      i++;
+    } while (i < 10);
+    ```
 
 ### Functions
 
