@@ -210,7 +210,7 @@ C provides various operators for performing operations on variables.
     }
     ```
 
-- `do-while` Loop:
+  - `do-while` Loop:
 
     ```c
     int i = 0;
