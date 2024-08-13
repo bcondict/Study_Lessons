@@ -40,7 +40,7 @@ Functions are self-contained block of code designed to perform a specific task. 
 
 - Structure:
 
-  The structure of a function consists on 3 main parts: `return type``,`name of the function` and `arguments`. That may look like this:
+  The structure of a function consists on 3 main parts: `return type`,`name of the function` and `arguments`. That may look like this:
 
   ```
   {return type} {functions name}({arguments})
