@@ -1,33 +1,41 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 /**
- * factorial - function to calculate the factorial result
+ * factorial - funnction to calculate the factorial result
  *
- * @n: number to calculate the factorial
+ * @number: numbert to calculate te factorial
  *
- * Return: the result of the factorial result;
+ * Return: the restult of the factrual
  */
-int factorial(int n)
+int factorial(int number)
 {
-  if (n == 0)
-    return 1;
+	if (number == 0)
+		return (1);
 
-  return n * factorial(n - 1);
-
+	return (number * factorial(number - 1));
 }
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+* main - Entry point
+*
+* Return: always 0
+*/
+int main(int argc, char *argv[])
 {
-  int number = 5;
-  int result = factorial(number);
+	int numberToCalculate = 0;
+	int result = 0;
 
-  printf("Factorial of %d is %d\n", number, result);
+	if (argc < 2)
+	{
+		printf("Usage ./a.out ${numberToCalculate}");
+		return (0);
+	}
 
-  return (0);
+	numberToCalculate = atoi(argv[1]);
+	result = factorial(numberToCalculate);
+
+	printf("Factorial of %d is %d\n", numberToCalculate, result);
+
+	return (0);
 }
