@@ -98,11 +98,10 @@ Python is a high-level, interpreted programming language known for its readabili
      Change the message printed by the program.
 
   2. Instructions:
-
-  - Modify `hello.py`` to print "Hello, Python!" instead of "Hello, World!".
-  - Save the file and run the script again.
-  - Outcome:
-    Understand how to modify and rerun Python scripts.
+     - Modify `hello.py`` to print "Hello, Python!" instead of "Hello, World!".
+     - Save the file and run the script again.
+     - Outcome:
+       Understand how to modify and rerun Python scripts.
 
 - Task 2: Add a Comment to Your Script
 
@@ -110,10 +109,9 @@ Python is a high-level, interpreted programming language known for its readabili
      Add a comment explaining what the script does.
 
   2. Instructions:
-
-  - Add a comment at the top of `hello.py` that says `# This script prints Hello, Python!`.
-  - Outcome:
-    Learn how to add comments to Python code.
+     - Add a comment at the top of `hello.py` that says `# This script prints Hello, Python!`.
+     - Outcome:
+       Learn how to add comments to Python code.
 
 - Task 3: Create a New Script with a Variable
 
@@ -123,10 +121,10 @@ Python is a high-level, interpreted programming language known for its readabili
 
   2. Instructions:
 
-  - Write a new script called `message.py`.
-  - In the script, create a variable `message` and assign it the value `"Hello, Python!"`.
-  - Use the `print()` function to print the value of the `message` variable.
-  - Save and run the script.
+     - Write a new script called `message.py`.
+     - In the script, create a variable `message` and assign it the value `"Hello, Python!"`.
+     - Use the `print()` function to print the value of the `message` variable.
+     - Save and run the script.
 
   3. Outcome:
      Practice creating and using variables in Python.
