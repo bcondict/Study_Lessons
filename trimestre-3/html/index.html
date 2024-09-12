@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <tittle>My First HTML</tittle>
+        <!-- <link rel="stylesheet" href="./styles.css"> -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <style>
+        
+        #chocolate {
+            color: brown;
+        }
+        p {
+            color: red;
+        }
+        .text {
+            color: green;
+            color: blue;
+        }
+
+        a.text, ul {
+            color: yellow;
+            text-decoration: none;
+            transform: translate(10px, 10px);
+        }
+        a.text:hover {
+            color: red;
+        }
+        p.text::before{
+            content: "";
+            border-top: 10px solid;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom:none ;
+
+            box-shadow: 0px 10px 10px 20px blue, 0px 10px 10px 20px red;
+        }
+
+    </style>
+    <body>
+        <h1>hola buenas </h1>
+        <p class="text" style="color: red;"> adios hola buenas mi nombre es jesus</p>
+        <p>y me gusta la pizza</p>
+        <p id="chocolate"> a mi me gusta el chocolate con mis patatas</p>
+        <a class="text" href="https://www.google.com">google</a>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ol>
+            <li>inline selector</li>
+            <li>id</li>
+            <li>class</li>
+            <li>element</li>
+            <li>todo</li>
+        </ol>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>column 1</th>
+                    <th>column 2</th>
+                    <th>column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>column 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Jesus Junco">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="hola@gmail.com">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="password">
+
+            <button type="submit">submit</button>
+            <select>
+                <option value="0">Select Option</option>
+                <option value="1">option 1</option>
+                <option value="2">option 2</option>
+            </select>
+            <textarea name="message" placeholder="Enter your message"></textarea>
+        </form>
+    </body>
+</html>

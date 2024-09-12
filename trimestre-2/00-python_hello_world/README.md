@@ -116,8 +116,7 @@ Python is a high-level, interpreted programming language known for its readabili
 - Task 3: Create a New Script with a Variable
 
   1. Objective:
-
-  Create a new Python script that uses a variable to store a message.
+     Create a new Python script that uses a variable to store a message.
 
   2. Instructions:
 
