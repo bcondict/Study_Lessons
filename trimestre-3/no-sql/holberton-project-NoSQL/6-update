@@ -1,2 +1,0 @@
-// 6. add a new attribute to collection school
-db.school.updateMany({"name": "Holberton school"}, {$set: {"address": "972  Mission street"}})
