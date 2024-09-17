@@ -73,12 +73,12 @@ Command-line arguments are values passed to a program when it is executed. They 
 ### Exercise
 
 1. Program to print the sum of two numbers passed as command-line arguments.
-1. Step1: Write a Program to Sum Two Numbers
-1. Step 2: Compile and Run the Program
+    1. Step1: Write a Program to Sum Two Numbers
+    2. Step 2: Compile and Run the Program
 
 
-    - Command: `gcc -o sum sum.c`
-    - Run: `./sum 5 10`
-    - Output: `Sum: 15`
+        - Command: `gcc -o sum sum.c`
+        - Run: `./sum 5 10`
+        - Output: `Sum: 15`
 
-3. Step 3: Add Error Handling for Non-Numeric Input
+    3. Step 3: Add Error Handling for Non-Numeric Input
