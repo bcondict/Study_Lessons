@@ -51,7 +51,7 @@ A static library is a collection of object files bundled together into a single 
 - Creating Static Libraries
 
   - Step 1: Compiling Object Files
-    This generates object files file1.o and file2.o from file1.c and file2.c.
+    This generates object files `file1.o` and `file2.o` from `file1.c` and `file2.c`.
 
     Command: `gcc -c file1.c file2.c`
 
