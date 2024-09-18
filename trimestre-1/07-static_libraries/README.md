@@ -56,7 +56,7 @@ A static library is a collection of object files bundled together into a single 
     Command: `gcc -c file1.c file2.c`
 
   - Step 2: Creating a Static Library Using ar
-    This creates a static library named libmylibrary.a containing file1.o and file2.o.
+    This creates a static library named `libmylibrary.a` containing `file1.o` and `file2.o`.
 
     Command: `ar rcs libmylibrary.a file1.o file2.o`
 
