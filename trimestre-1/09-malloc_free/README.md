@@ -32,10 +32,15 @@ It allows programs to request memory as needed, which can lead to more efficient
 ### What is Dynamic Memory Allocation?
 
 - What is Dynamic Memory Allocation?
+
   Dynamic memory allocation refers to the process of allocating memory storage during the runtime of the program. This contrasts with static memory allocation, which occurs at compile time.
+
 - Benefits of Using Dynamic Memory Allocation:
+
   **Flexibility**: Allocate memory as needed.
+
   **Efficiency**: Use memory more efficiently by allocating only what is necessary.
+
   **Scalability**: Handle data structures of varying sizes.
 
 ### What is `malloc`?
