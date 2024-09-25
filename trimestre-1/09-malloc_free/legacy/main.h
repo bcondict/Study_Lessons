@@ -4,6 +4,5 @@
 /* libraries */
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 #endif /* _MAIN_H_ */
