@@ -57,7 +57,8 @@ Tuples are ordered, immutable collection of items. They can store items of any d
 ### List
 
 - Creating and initializing:
-  - Syntax: ```python
+  - Syntax:
+    ```python
     my_list = [item1, item2, item3]
     ```
   - Example:
