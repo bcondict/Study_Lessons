@@ -1,0 +1,15 @@
+doctest.txt
+=============
+>>> add_function = __import__('add_function').add
+
+>>> add(2, 3)
+5
+>>> add(0, 3)
+3
+>>> add(-2, 3)
+1
+>>> add("a", 3)
+Traceback (most recent call last):
+...
+TypeError: can only concatenate str (not "int") to str
+>>>
