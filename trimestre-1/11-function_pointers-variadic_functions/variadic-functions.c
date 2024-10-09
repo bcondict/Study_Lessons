@@ -6,33 +6,31 @@
 *
 * Return: always 0;
 */
-int main ()
+int main(void)
 {
-  printf("the sum of 3, 4, 5, 6: %d\n", sum(3, 11, 5, 9));
-  printf("the sum of 2, 1, 5: %d\n", sum(2, 1, 5));
-  printf("the sum of 8, 5: %d\n", sum(1, 8, 5));
+  printf("The sum of 4, 5, 6: %d\n", sum(3, 4, 5, 6));
+  printf("The sum of 8, 9, 10, 11: %d\n", sum(4, 8, 9, 10, 11));
+  printf("The sum of 1, 2: %d\n", sum(2, 1, 2));
+  printf("The sum of -1, -2, 8, 10, 15: %d\n", sum(5, -1, -2, 8, 10, 15));
+
+  printf("hola %d, %d, %d, %d", 5, 6, 7, 8);
 
   return (0);
 }
 
-/**
-* sum 
-*
-*/
-int sum(int num, ...)
+int sum(int num_of_args, ...)
 {
-  va_list args;
-  va_start(args, num);
-
   int sumatory = 0;
   int i = 0;
 
-  for (i = 0; i < num; i++)
-  {
+  va_list args;
+  va_start(args, num_of_args);
+
+  for (i = 0; i < num_of_args; i++)
     sumatory += va_arg(args, int);
-  }
 
   va_end(args);
 
   return (sumatory);
 }
+

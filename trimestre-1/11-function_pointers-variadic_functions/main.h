@@ -3,14 +3,20 @@
 
 /* Libraries */
 #include <stdio.h>
-#include <stdarg.h>
 #include <string.h>
+#include <stdarg.h>
+
+/* Macros */
+#define TRUE 1
+#define FALSE 0
+
 
 /* Prototypes */
-int check_includes(char *string_array[], char *string_to_check);
-void hello();
-void say_goodbye();
-void greet(void (*func)());
-int sum(int num, ...);
+int check_includes(char *string_array[], int string_array_len, char *string_to_check);
+void execute_function(int (*function_pointer)());
+int hello();
+int goodbye();
 
-#endif // !_MAIN_H_
+int sum(int num_of_args, ...);
+
+#endif /* _MAIN_H_ */
