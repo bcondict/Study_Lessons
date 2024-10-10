@@ -159,10 +159,14 @@ OOP is a programming paradigm that uses objects and classes to structure softwar
 ### Exercise 1
 
 1. Objective:
-   Create a base class `Animal` that receives the name of the dog and age.
-   - `Name`: is the name of the dog, that's a public attribute
-   - `Age`: is the age of the dog, and is a public attribute
-     Create a derived class `Dog` that receive the name of the dog, ace and the name of the owner.
+   Create a base class `Animal` that receives the name of the animal and age.
+
+   - `Name`: is the name of the animal, that's a public attribute
+   - `Age`: is the age of the animal, and is a public attribute
+
+   Create a derived class `Dog` that receive the name of the dog, ace and the name of the owner.
+
    - `OwnerName`: is the name of the owner, and has to be a private attribute
+
 2. Exercise:
    Found on [`animals.py`](animals.py)
