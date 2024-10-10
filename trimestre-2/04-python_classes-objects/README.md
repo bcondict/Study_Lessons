@@ -144,7 +144,7 @@ OOP is a programming paradigm that uses objects and classes to structure softwar
       def sound(self):
         return "Some sound"
 
-    class Dog:
+    class Dog(Animal):
       def sound(self):
         return "Bark"
 
