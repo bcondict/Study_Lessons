@@ -11,6 +11,7 @@ int main(void)
 
   printPerson(alice);
 
+  alice.age = 15;
   alice.name = "Carlos";
   printPerson(alice);
 
