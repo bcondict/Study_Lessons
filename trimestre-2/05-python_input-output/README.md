@@ -100,9 +100,8 @@ I/O operations enable data exchange between the program and the external environ
 - `write()`: Writes a string to the file.
 
   ```python
-  Copiar código
   with open("example.txt", "w") as file:
-  file.write("Hello, World!")
+    file.write("Hello, World!")
   ```
 
 - `writelines()`: Writes a list of strings to the file.
@@ -110,7 +109,7 @@ I/O operations enable data exchange between the program and the external environ
   ```python
   lines = ["First line\n", "Second line\n"]
   with open("example.txt", "w") as file:
-  file.writelines(lines)
+    file.writelines(lines)
   ```
 
 ### File Modes and Context Managers:
