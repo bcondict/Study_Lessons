@@ -74,25 +74,25 @@ I/O operations enable data exchange between the program and the external environ
 
 ```python
   with open("example.txt", "r") as file:
-  content = file.read()
-  print(content)
+    content = file.read()
+    print(content)
 ```
 
 - `readline()`: Reads one line at a time.
 
   ```python
   with open("example.txt", "r") as file:
-  line = file.readline()
-  print(line)
+    line = file.readline()
+    print(line)
   ```
 
 - `readlines()`: Reads all lines and returns a list.
 
   ```python
   with open("example.txt", "r") as file:
-  lines = file.readlines()
-  for line in lines:
-  print(line.strip())
+      lines = file.readlines()
+      for line in lines:
+          print(line.strip())
   ```
 
 ### Writing to Files:
