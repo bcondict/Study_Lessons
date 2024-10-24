@@ -56,9 +56,11 @@
 
 - Other Serialization Formats:
 
-`pickle`: serializes Python objects into a byte stream and deserializes byte streams back into Python objects.
-`YAML`: Human-readable data serialization format.
-`MessagePack`: Efficient binary serialization format.
+  - `pickle`: serializes Python objects into a byte stream and deserializes byte streams back into Python objects.
+
+  - `YAML`: Human-readable data serialization format.
+
+  - `MessagePack`: Efficient binary serialization format.
 
 ## What is it and how to use it?
 
