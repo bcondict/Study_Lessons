@@ -71,10 +71,10 @@ SQL is essential for interacting with relational databases, which are used to st
   The CREATE TABLE statement defines the structure of a new table.
 
   ```sql
-  CREATE TABLE users (
-      id INT PRIMARY KEY,
-      name VARCHAR(50),
-      email VARCHAR(100)
+  CREATE TABLE IF NOT EXISTS `users` (
+      `id` INT PRIMARY KEY,
+      `name` VARCHAR(50),
+      `email` VARCHAR(100)
   );
   ```
 
@@ -83,7 +83,7 @@ SQL is essential for interacting with relational databases, which are used to st
   The INSERT INTO statement adds new records to a table.
 
   ```sql
-  INSERT INTO users (id, name, email) VALUES (1, 'Alice', 'alice@example.com');
+  INSERT INTO `users` (`id`, `name`, `email`) VALUES (1, 'Alice', 'alice@example.com');
   ```
 
 - Querying Data:
@@ -91,7 +91,8 @@ SQL is essential for interacting with relational databases, which are used to st
   The SELECT statement retrieves data from a table.
 
   ```sql
-  SELECT * FROM users;
+  SELECT * FROM `users`;
+  SELECT `id` as myId FROM `users`
   ```
 
 - Updating Data:
@@ -99,7 +100,7 @@ SQL is essential for interacting with relational databases, which are used to st
   The UPDATE statement modifies existing records in a table.
 
   ```sql
-  UPDATE users SET email = 'alice@newdomain.com' WHERE id = 1;
+  UPDATE `users` SET `email` = 'alice@newdomain.com' WHERE `id` = 1;
   ```
 
 - Deleting Data:
@@ -107,7 +108,7 @@ SQL is essential for interacting with relational databases, which are used to st
   The DELETE statement removes records from a table.
 
   ```sql
-  DELETE FROM users WHERE id = 1;
+  DELETE FROM `users` WHERE `id` = 1;
   ```
 
 #### Advanced SQL Concepts
