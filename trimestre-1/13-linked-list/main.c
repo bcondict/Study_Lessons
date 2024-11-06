@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
-* main - entry point
+* main - entry point, create a single linked list
 *
-* Return: Always 0
 */
-int main (void)
+int main(void)
 {
-  Node_t *head = createNode(5, NULL);
-  Node_t *nodeApart = createNode(8, NULL);
+  node_t *head = createNode(1, NULL);
+  node_t *node_1 = createNode(2, NULL);
 
-  appendNode(6, head);
-  appendNode(7, head);
+  appendNode(head, 2);
+  appendNode(head, 3);
 
-  printList(head);
-  insertNodeAtIndex(head, nodeApart, 3);
-  printList(head);
+  printLinkedList(head);
 
+  insertNodeAtIndex(head, node_1, 3);
+
+  printLinkedList(head);
+
+  freeLinkedList(head);
   return (0);
 }
-
-

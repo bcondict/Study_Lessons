@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * createNode - create a new node
- *
- * @data: data to be added to the new node
- * @next: pointer to the next node
- * Return: pointer to the new node
+* createNode - create a new node type node_t
+*
+* @value: value of the node
+* @next: next node of the linked list
+*
+* Return: the created node
 */
-Node_t *createNode(int data, Node_t *next)
+node_t *createNode(int value, node_t *next)
 {
-  Node_t *newNode = NULL;
+  node_t *newNode = NULL;
 
-  newNode = (Node_t *) malloc(sizeof(Node_t));
+  newNode = (node_t *) malloc(sizeof(node_t));
   if (!newNode)
   {
-    printf("Memory Error\n");
-    return (NULL);
+    printf("Memmory Error\n");
+    return NULL;
   }
 
-  newNode->data = data;
+  newNode->value = value;
   newNode->next = next;
 
-  return newNode;
+  return (newNode);
 }
-

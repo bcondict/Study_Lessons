@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * appendNode - append a new node to the end
- *
- * @data: data to create a new node
- * @head: head node 
+* appendNode - append a node type node_t
+*
+* @head: head of the linked list
+* @value: value of the node to append
+*
+* Return: nothing
 */
-void appendNode(int data, Node_t *head)
+void appendNode(const node_t *head, int value)
 {
-  Node_t *newNode = createNode(data, NULL);
-  Node_t *temp = head;
+  node_t *newNode = createNode(value, NULL);
+  node_t *temp = (node_t*) head;
 
   if (!newNode)
     return;
 
-  while (temp->next != NULL)
-  {
+  while (temp->next)
     temp = temp->next;
-  }
 
   temp->next = newNode;
 }

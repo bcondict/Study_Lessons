@@ -1,21 +1,21 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-/* libraries */
+/* Libraries */
 #include <stdio.h>
 #include <stdlib.h>
 
-/* structures */
+/* Structures */
 typedef struct Node {
-  int data;
+  int value;
   struct Node *next;
+} node_t;
 
-} Node_t;
-
-/* prototypes */
-void printList(Node_t *n);
-Node_t *createNode(int data, Node_t *next);
-void appendNode(int data, Node_t *head);
-void insertNodeAtIndex(Node_t *head, Node_t *new_node, int position);
+/* Prototypes */
+node_t *createNode(int value, node_t *next);
+void appendNode(const node_t *head, int value);
+void printLinkedList(const node_t *head);
+void insertNodeAtIndex(const node_t *head, node_t *node, int index);
+void freeLinkedList(node_t *head);
 
 #endif /* _MAIN_H_ */
