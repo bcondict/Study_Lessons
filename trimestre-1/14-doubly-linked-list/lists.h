@@ -4,19 +4,20 @@
 /* Libraries */
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /* Structures */
-typedef struct Node_s {
-  int data;
-  struct Node_s *next;
-  struct Node_s *prev;
-} Node_t;
+typedef struct Node {
+  int value;
+  struct Node *next;
+  struct Node *prev;
+
+} node_t;
 
 /* Prototypes */
-Node_t *createNode(int data, Node_t *next, Node_t *prev);
-void appendNode(Node_t *head, Node_t *node);
-Node_t *printListForward(Node_t *tail);
-Node_t *printListBackward(Node_t *tail);
+node_t *createNode(int value, node_t *next, node_t *prev);
+void appendNode(const node_t *head, node_t *node);
+int printLinkedListForward(const node_t *head);
+int printLinkedListBackward(const node_t *head, int index);
+void freeLinkedList(node_t *head);
 
 #endif /* _LISTS_H_ */

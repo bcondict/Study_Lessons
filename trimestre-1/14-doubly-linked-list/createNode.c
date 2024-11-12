@@ -1,26 +1,25 @@
 #include "lists.h"
 
 /**
-* createNode - Create a new node of the double linked list
-*
-* @data: data to store in the node
-* @next: pointer to the next node
-* @prev: pointer to the previous node
-*
-* Return: A pointer to the new created node
-*/
-Node_t *createNode(int data, Node_t *next, Node_t *prev)
-{
-  Node_t *newNode;
+ * createNode - Create a node of a double linked list
+ * type node_t
+ *
+ * @value: value to store in the node
+ * @next: pointer to the next node
+ * @prev: pointer to the prev node
+ *
+ * Return: the created node
+ */
+node_t *createNode(int value, node_t *next, node_t *prev) {
+  node_t *newNode = NULL;
 
-  newNode = (Node_t *) malloc(sizeof(Node_t));
-  if (!newNode)
-  {
-    printf("Memory error\n");
+  newNode = (node_t *)malloc(sizeof(node_t));
+  if (!newNode) {
+    printf("Memmory error\n");
     return (NULL);
   }
 
-  newNode->data = data;
+  newNode->value = value;
   newNode->next = next;
   newNode->prev = prev;
 
