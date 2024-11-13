@@ -225,7 +225,7 @@ CSS has also evolved, with CSS3 introducing new modules such as Flexbox, Grid, t
 
   - Example of box model properties:
     ```css
-    Copiar código .box {
+    .box {
       width: 300px;
       height: 200px;
       padding: 10px;
@@ -283,7 +283,7 @@ CSS has also evolved, with CSS3 introducing new modules such as Flexbox, Grid, t
     ```
   - Animations:
     ```css
-    Copiar código @keyframes example {
+    @keyframes example {
       from {
         background-color: red;
       }
