@@ -491,7 +491,7 @@ Used for one-dimensional layouts, such as navigation bars, toolbars, and vertica
       box-shadow: 0 0 0 2px black;
     }
   </style>
-  <div class="box">Responsive text size using min().</div>
+  <div class="box">Responsive text size using max().</div>
   ```
 
 - `clamp()`
