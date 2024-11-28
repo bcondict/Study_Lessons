@@ -95,13 +95,13 @@ Flask allows developers to create web applications quickly with minimal setup. I
   ```python
   from flask import Flask, render_template
 
-  app = Flask(**name**)
+  app = Flask(__name__)
 
   @app.route('/')
   def home():
     return render_template('index.html')
 
-  if **name** == '**main**':
+  if __name__ == '__main__':
     app.run(debug=True)
   ```
 
@@ -113,7 +113,7 @@ Flask allows developers to create web applications quickly with minimal setup. I
 
 - Templating Basics:
 
-  Create a template file (index.html):
+  Create a template file (`index.html`):
 
   ```html
   <!doctype html>
@@ -192,7 +192,7 @@ Flask allows developers to create web applications quickly with minimal setup. I
 
 - CSS, JavaScript, and Image Files:
 
-  - Organize static files in a static folder:
+  - Organize static files in a `static` folder:
 
     ```bash
     /static
