@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="element" id="myElement">Hola como estan</div>
+    <div class="element" id="myElement2">Bien y tu?</div>
+    <section id="container"></section>
+    <input type="checkbox" name="" value="" />
+    <button id="clickMeButton">Click me!</button>
+  </body>
+  <script>
+    const element = document.getElementById("myElement");
+    console.log("my element: ", element.innerHTML);
+
+    const classElement = document.getElementsByClassName("element");
+    console.log("my class element: ", classElement);
+
+    const tagElements = document.getElementsByTagName("section");
+    console.log("my tag element: ", tagElements);
+
+    const queryElement = document.querySelector("div.element");
+    console.log("my query element: ", queryElement);
+
+    queryElement.classList.toggle("element");
+
+    const queryElement2 = document.querySelector("div.element");
+    console.log("my query element: ", queryElement2);
+
+    // const queryElements = document.querySelectorAll("div.element");
+    // console.log("my query elements: ", queryElements);
+
+    setTimeout(() => {
+      element.innerHTML = "Hola!!!! como estas?";
+    }, "5000");
+
+    const newElement = document.createElement("article");
+    newElement.innerHTML = "I am a new element";
+
+    const container = document.getElementById("container");
+    console.log("container", container);
+    container.appendChild(newElement);
+
+    const clickMeButton = document.getElementById("clickMeButton");
+    clickMeButton.addEventListener("click", () => {
+      queryElement2.style.background = "red";
+    });
+  </script>
+</html>
