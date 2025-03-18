@@ -27,8 +27,11 @@ Variable annotations allow developers to specify the expected data type of varia
 
 ### Why Use Type Annotations?
 ✅ Improves code readability and documentation
+
 ✅ Helps IDEs provide better auto-completion and error detection
+
 ✅ Detects type errors early using static type checkers (`mypy`)
+
 ✅ Enhances maintainability in large projects
 
 ### Basic Syntax of Variable Annotations

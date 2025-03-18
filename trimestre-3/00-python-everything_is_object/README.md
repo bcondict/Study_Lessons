@@ -22,8 +22,8 @@ Python was designed with an object-oriented approach from the beginning. Everyth
 ### What is an Object?
 An object in Python is an instance of a data structure that contains:
 
-  - Identity (unique identifier, given by id(obj))
-  - Type (determined by type(obj))
+  - Identity (unique identifier, given by `id(obj)`)
+  - Type (determined by `type(obj)`)
   - Value (the data stored inside the object)
 
   Example:
@@ -52,13 +52,14 @@ A class is a blueprint for creating objects, while an object (or instance) is a 
 
   print(car1.brand)  # Toyota
   print(car2.color)  # Blue
+  ```
   Car is a class (blueprint).
   car1 and car2 are objects (instances of Car).
-  ```
 
 ### Mutable vs Immutable Objects
 - Mutable objects: Can be modified after creation.
 - Immutable objects: Cannot be changed after creation.
+
   Example:
 
   ```python
@@ -119,13 +120,11 @@ Use is to check if two variables refer to the same object.
   ```
 
 ### Checking If Two Variables Are Linked to the Same Object
-Use id() to check the memory address.
+Use `id()` to check the memory address.
 
   Example:
 
   ```python
-  Copiar
-  Editar
   x = [10, 20, 30]
   y = x
 
@@ -148,6 +147,7 @@ Use id() to get the memory address.
 - Dictionaries (`dict`)
 - Sets (`set`)
 - Byte Arrays (`bytearray`)
+
   Example:
 
   ```python
@@ -161,7 +161,8 @@ Use id() to get the memory address.
 - Tuples (`tuple`)
 - Booleans (`bool`)
 - Bytes (`bytes`)
-- Example:
+
+  Example:
 
   ```python
   x = "hello"
@@ -173,6 +174,7 @@ Python uses pass-by-object-reference, meaning:
 
 - If the object is **mutable**, changes inside the function affect the original.
 - If the object is **immutable**, changes inside the function do not affect the original.
+
   Example:
 
   ```python
